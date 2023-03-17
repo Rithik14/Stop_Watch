@@ -12,20 +12,40 @@
 
 }
 body {
-    background-color: var(--dark);
-    color: var(--light);
-}
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
 .watch{
     text-align: center;
-    background-color: var(--darkdark);
+    background:  rgba(226, 195, 195, 0.3) !important;
     width: 100%;
-    max-width: 500px;
+    max-width: 750px;
     margin: 12rem auto;
     padding: 5rem ;
+    border-radius: 20px;
+    color: rgb(146, 4, 32);
+
 }
 .time {
  font-size: 5rem;
  font-weight: 400;
+ color:rgb(0, 35, 101);
  margin-bottom: 1rem;
 }
 .controls{
@@ -51,8 +71,66 @@ padding-bottom: 30px;
     transition: 0.4s;
 }
 button:hover{
-    opacity: 0.7;
+    background-color: rgb(146, 4, 32);
 }
-button:active{
-    background-color: var(--dark);
+.txt{
+    font-size: 20px;
+}
+@media (max-width: 500px) {
+    .watch{
+        text-align: center;
+        width: 100%;
+        margin: 12rem auto;
+        padding: 5rem ;
+        border-radius: 20px;
+        color: rgb(146, 4, 32);
+        width:auto;
+        height: 600px;
+        position: absolute;
+        top:20;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 20px;
+    
+    }
+    .time {
+        font-size: 3.5rem;
+        width: 400px;
+        margin-left: -73px;
+        font-weight: 100;
+        color:rgb(0, 35, 101);
+        margin-bottom: 1rem;
+       }
+       .controls{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    h3{
+        font-size: 25px;
+    padding-bottom: 30px;
+    height: 6em;
+    }
+
+       .controls button{
+        appearance: none;
+        background: none;
+        border: none;
+        outline: none;
+        user-select: none;
+        cursor: pointer;
+        color: var(--light);
+        background-color: var(--primary);
+        margin:  0 0.5rem;
+        margin-top: 4em;
+        padding: 1rem 2rem;
+        border-radius: 0.7rem;
+        transition: 0.4s;
+    }
+    .txt{
+        font-size: 8px;
+    }
 }
