@@ -5,4 +5,4 @@ The user can start the timer for any work and stop or reset as per their wish.
 
 You just have to click on the ‘Start’ to start the watch timer while click on the ‘stop’ to pause.</p>
 <h2>Demo</h2>
-<img style="width:35%" src="./demo.gif" />
+<img style="width:40%" src="./demo.gif" />
